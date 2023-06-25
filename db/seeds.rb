@@ -5,3 +5,55 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# Seed restaurants
+restaurant1 = Restaurant.create(
+     name: "Java house",
+     address: "United mall Kisumu"
+   )
+   
+   restaurant2 = Restaurant.create(
+     name: "Galitos",
+     address: "Mega plaza"
+   )
+   
+   restaurant3 = Restaurant.create(
+     name: "Star dishes",
+     address: "Oginga Odinga Street"
+   )
+   
+   # Seed pizzas
+   pizza1 = Pizza.create(
+     name: "Pepperoni",
+     ingredients: "Dough, pepperoni, tomatoes"
+   )
+   
+   pizza2 = Pizza.create(
+     name: "Hawaiian",
+     ingredients: "Pineapple, dough, water"
+   )
+   
+   pizza3 = Pizza.create(
+     name: "Italian",
+     ingredients: "Chicken, sauce, onions, dough"
+   )
+   
+   # Seed restaurant pizzas
+   RestaurantPizza.create(
+     restaurant: restaurant1,
+     price: 25,
+     pizza: pizza1
+   )
+   
+   RestaurantPizza.create(
+     restaurant: restaurant2,
+     price: 18,
+     pizza: pizza2
+   )
+   
+   RestaurantPizza.create(
+     restaurant: restaurant3,
+     price: 5,
+     pizza: pizza3
+   )
+   
