@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-# Seed restaurants
 restaurant1 = Restaurant.create(
      name: "Java house",
      address: "United mall Kisumu"
@@ -46,9 +45,27 @@ restaurant1 = Restaurant.create(
    )
    
    RestaurantPizza.create(
+     restaurant: restaurant1,
+     price: 29,
+     pizza: pizza3
+   )
+   
+   RestaurantPizza.create(
      restaurant: restaurant2,
      price: 18,
      pizza: pizza2
+   )
+   
+   RestaurantPizza.create(
+     restaurant: restaurant2,
+     price: 25,
+     pizza: pizza1
+   )
+   
+   RestaurantPizza.create(
+     restaurant: restaurant2,
+     price: 13,
+     pizza: pizza3
    )
    
    RestaurantPizza.create(
