@@ -20,6 +20,11 @@ restaurant1 = Restaurant.create(
      name: "Star dishes",
      address: "Oginga Odinga Street"
    )
+
+   restaurant4= Restaurant.create(
+     name: "Stanleys",
+     address: "Tom Mboya street"
+   )
    
    # Seed pizzas
    pizza1 = Pizza.create(
@@ -64,7 +69,7 @@ restaurant1 = Restaurant.create(
    
    RestaurantPizza.create(
      restaurant: restaurant2,
-     price: 13,
+     price: 17,
      pizza: pizza3
    )
    
@@ -73,4 +78,21 @@ restaurant1 = Restaurant.create(
      price: 5,
      pizza: pizza3
    )
+
+   RestaurantPizza.create(
+     restaurant: restaurant4,
+     price: 13,
+     pizza: pizza1
+   )
+
+   RestaurantPizza.create(
+     restaurant: restaurant4,
+     price: 11,
+     pizza: pizza2
+   )
    
+   RestaurantPizza.create(
+     restaurant: restaurant4,
+     price: 12,
+     pizza: pizza3
+   )
